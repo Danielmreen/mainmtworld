@@ -1,0 +1,255 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Crypto Dashboard"})
+
+    <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    @@include("partials/head-css.html")
+
+</head>
+
+<body>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menu.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+
+                @@include("partials/page-title.html", {"pagetitle": "Dashboards", "title": "MTWORLD"})
+
+                <div class="row">
+                    <div class="col-xxl-3">
+                        <div class="card card-height-100">
+                            <div class="card-header border-0 align-items-center d-flex">
+                                <h4 class="card-title mb-0 flex-grow-1">Deposit form</h4>
+
+                            </div><!-- end cardheader -->
+                            <div class="card-body">
+                                <h2>Deposit Form</h2>
+                                <form>
+                                    <label for="account-number">Account Number:</label>
+                                    <input type="text" id="account-number" name="account-number" required>
+                                     <br>
+                                    <label for="deposit-amount">Deposit Amount:</label>
+                                    <input type="number" id="deposit-amount" name="deposit-amount" step="0.01" required>
+                                    <br>
+                                    <label for="deposit-date">Deposit Date:</label>
+                                    <input type="date" id="deposit-date" name="deposit-date" required> <br>
+
+                                    <label for="payment-method">Payment Method:</label>
+                                    <input type="text" id="payment-method" name="payment-method" placeholder="e.g., Cash, Bank Transfer" required> <br>
+
+                                    <label for="reference-number">Reference Number (if applicable):</label>
+                                    <input type="text" id="reference-number" name="reference-number"><br>
+
+                                    <input type="submit" value="Submit Deposit">
+                                </form>
+
+                            </div><!-- end card body -->
+                        </div><!-- end card -->
+                    </div><!-- end col -->
+
+                    <div class="col-xxl-9 order-xxl-0 order-first">
+                        <div class="d-flex flex-column h-100">
+                            <div class="row h-100">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
+                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
+                                                        </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Main Balance</p>
+                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-end">
+                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+
+
+
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
+                                                            <i class="ri-arrow-down-circle-fill align-middle"></i>
+                                                        </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1">PAMM Lot</p>
+                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="14799.44">0</span></h4>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-end">
+                                                    <span class="badge bg-danger-subtle text-danger"><i class="ri-arrow-down-s-fill align-middle me-1"></i>4.80 %<span> </span></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
+                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
+                                                        </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> COPYTRADE Balance</p>
+                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-end">
+                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3">
+                                                            <i class="ri-arrow-up-circle-fill align-middle"></i>
+                                                        </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Profit</p>
+                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="19523.25">0</span></h4>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-end">
+                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>3.67 %<span> </span></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
+                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
+                                                        </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Withdrawal</p>
+                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-end">
+                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
+                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
+                                                        </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Network</p>
+                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
+                                                </div>
+                                                <div class="flex-shrink-0 align-self-end">
+                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
+                                                </div>
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+
+                        </div>
+                    </div><!-- end col -->
+                </div><!-- end row -->
+
+
+
+
+
+                </div><!-- end row -->
+
+            </div>
+            <!-- container-fluid -->
+        </div>
+        <!-- End Page-content -->
+
+        @@include("partials/footer.html")
+    </div>
+    <!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+@@include("partials/customizer.html")
+
+@@include("partials/vendor-scripts.html")
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+<!-- Swiper Js -->
+<script src="assets/libs/swiper/swiper-bundle.min.js"></script>
+
+<!-- CRM js -->
+<script src="assets/js/pages/dashboard-crypto.init.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
