@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="assets/images/favicon.png">
 
     <link href="assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" />
-
+    <link href="assets/css/deposit.css" rel="stylesheet" />
     <!-- Layout config Js -->
     <script src="assets/js/layout.js"></script>
     <!-- Bootstrap Css -->
@@ -435,12 +435,7 @@
                         </a>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                            <i class="ri-refund-2-line"></i> <span>Deposit</span>
-                        </a>
 
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                             <i class="ri-exchange-box-line"></i> <span>Transaction</span>
@@ -454,24 +449,29 @@
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <a class="nav-link menu-link" href="#sidebartrade" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebartrade">
                             <i class="ri-global-line"></i> <span>Trading Room (PAMM/COPY)</span>
                         </a>
 
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                            <i class="ri-hand-coin-line"></i> <span>Withdrawal</span>
-                        </a>
+                        <div class="collapse menu-dropdown" id="sidebartrade">
+                            <ul class="nav nav-sm flex-column">
+                                <li class="nav-item">
+                                    <a href="pamm-trade.html" class="nav-link" data-key="t-main-tpamm">PAMM </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="copy-trade.html" class="nav-link" data-key="t-tcopy">COPY</a>
+                                </li>
+                            </ul>
+                        </div>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                            <i class="ri-user-follow-line"></i> <span>PAMM/Copy (JOIN NOW)</span>
-                        </a>
 
-                    </li>
-                    <!--
+
+
+
+
+
+
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
                             <i class="ri-apps-2-line"></i> <span data-key="t-apps">Apps</span>
@@ -819,7 +819,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </li>        end Dashboard Menu -->
+                    </li>
 
                     <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-pages">Pages</span></li>
 
@@ -1017,25 +1017,9 @@
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link menu-link" href="#sidebarLanding" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarLanding">
-                            <i class="ri-rocket-line"></i> <span data-key="t-landing">Landing</span>
-                        </a>
-                        <div class="collapse menu-dropdown" id="sidebarLanding">
-                            <ul class="nav nav-sm flex-column">
-                                <li class="nav-item">
-                                    <a href="landing.html" class="nav-link" data-key="t-one-page"> One Page </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="nft-landing.html" class="nav-link" data-key="t-nft-landing"> NFT Landing </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="job-landing.html" class="nav-link" data-key="t-job">Job</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
 
+
+                    <!--
                     <li class="menu-title"><i class="ri-more-fill"></i> <span data-key="t-components">Components</span></li>
 
                     <li class="nav-item">
@@ -1397,7 +1381,8 @@
                             </ul>
                         </div>
                     </li>
-
+                    -->
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link menu-link" href="#sidebarMultilevel" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarMultilevel">
                             <i class="ri-share-line"></i> <span data-key="t-multi-level">Multi Level</span>
@@ -1438,10 +1423,11 @@
                             </ul>
                         </div>
                     </li>
-
+                            -->
                 </ul>
             </div>
             <!-- Sidebar -->
+
         </div>
 
         <div class="sidebar-background"></div>
@@ -1483,163 +1469,68 @@
                                 <h4 class="card-title mb-0 flex-grow-1">Deposit form</h4>
 
                             </div><!-- end cardheader -->
+                            <!--DEPOSIT FORM-->
                             <div class="card-body">
-                                <h2>Deposit Form</h2>
-                                <form>
-                                    <label for="account-number">Account Number:</label>
-                                    <input type="text" id="account-number" name="account-number" required>
-                                     <br>
-                                    <label for="deposit-amount">Deposit Amount:</label>
-                                    <input type="number" id="deposit-amount" name="deposit-amount" step="0.01" required>
-                                    <br>
-                                    <label for="deposit-date">Deposit Date:</label>
-                                    <input type="date" id="deposit-date" name="deposit-date" required> <br>
 
-                                    <label for="payment-method">Payment Method:</label>
-                                    <input type="text" id="payment-method" name="payment-method" placeholder="e.g., Cash, Bank Transfer" required> <br>
 
-                                    <label for="reference-number">Reference Number (if applicable):</label>
-                                    <input type="text" id="reference-number" name="reference-number"><br>
+                                        <h1>Deposit</h1>
+                                        <ul class="payment-selection">
+                                            <li data-payment="card" class="payment-entity selected">USDT</li>
+                                            <li data-payment="paysafe" class="payment-entity">Touch N Go</li>
+                                            <li data-payment="neteller" class="payment-entity">MTW Wallet</li>
+                                        </ul>
+                                        <label>
+                                            <span>Amount</span>
+                                            <input type="text" placeholder="20.00" required="">
+                                        </label>
 
-                                    <input type="submit" value="Submit Deposit">
-                                </form>
+                                        <section class="provider-section card">
+                                            <label>
+                                                <span>Card number</span>
+                                                <input type="text" placeholder="1111 2222 3333 4444">
+                                                <a class="add-new-card" href="">+ Manage cards</a>
+                                            </label>
+                                            <div class="inline">
+                                                <label>
+                                                    <span>Expires</span>
+                                                    <input type="text" placeholder="04/17">
+                                                </label>
+                                                <label>
+                                                    <span>CVV</span>
+                                                    <input type="text" placeholder="123">
+                                                </label>
+                                            </div>
+                                        </section>
+                                        <section class="provider-section paysafe hide">
+                                            <label>
+                                                <span>PaysafeCard number</span>
+                                                <input type="text" placeholder="1111 2222 3333 4444">
+                                            </label>
+                                        </section>
+                                        <section class="provider-section neteller hide">
+                                            <label>
+                                                <span>Secure ID</span>
+                                                <input type="text" placeholder="123456">
+                                            </label>
+                                            <label>
+                                                <span>Email</span>
+                                                <input type="text" placeholder="someone@something.com">
+                                            </label>
+                                        </section>
+
+                                        <div class="divider">...</div>
+
+
+                                        <button>Deposit</button>
+
+
 
                             </div><!-- end card body -->
+
                         </div><!-- end card -->
                     </div><!-- end col -->
 
-                    <div class="col-xxl-9 order-xxl-0 order-first">
-                        <div class="d-flex flex-column h-100">
-                            <div class="row h-100">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
-                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
-                                                        </span>
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Main Balance</p>
-                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
-                                                </div>
-                                                <div class="flex-shrink-0 align-self-end">
-                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- end card body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
 
-
-
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
-                                                            <i class="ri-arrow-down-circle-fill align-middle"></i>
-                                                        </span>
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1">PAMM Lot</p>
-                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="14799.44">0</span></h4>
-                                                </div>
-                                                <div class="flex-shrink-0 align-self-end">
-                                                    <span class="badge bg-danger-subtle text-danger"><i class="ri-arrow-down-s-fill align-middle me-1"></i>4.80 %<span> </span></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- end card body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
-                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
-                                                        </span>
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> COPYTRADE Balance</p>
-                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
-                                                </div>
-                                                <div class="flex-shrink-0 align-self-end">
-                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- end card body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3">
-                                                            <i class="ri-arrow-up-circle-fill align-middle"></i>
-                                                        </span>
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Profit</p>
-                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="19523.25">0</span></h4>
-                                                </div>
-                                                <div class="flex-shrink-0 align-self-end">
-                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>3.67 %<span> </span></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- end card body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
-                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
-                                                        </span>
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Withdrawal</p>
-                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
-                                                </div>
-                                                <div class="flex-shrink-0 align-self-end">
-                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- end card body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm flex-shrink-0">
-                                                        <span class="avatar-title bg-light text-primary rounded-circle fs-3 material-shadow">
-                                                            <i class="ri-money-dollar-circle-fill align-middle"></i>
-                                                        </span>
-                                                </div>
-                                                <div class="flex-grow-1 ms-3">
-                                                    <p class="text-uppercase fw-semibold fs-12 text-muted mb-1"> Total Network</p>
-                                                    <h4 class=" mb-0">$<span class="counter-value" data-target="2390.68">0</span></h4>
-                                                </div>
-                                                <div class="flex-shrink-0 align-self-end">
-                                                    <span class="badge bg-success-subtle text-success"><i class="ri-arrow-up-s-fill align-middle me-1"></i>6.24 %<span> </span></span>
-                                                </div>
-                                            </div>
-                                        </div><!-- end card body -->
-                                    </div><!-- end card -->
-                                </div><!-- end col -->
-                            </div><!-- end row -->
-
-                        </div>
-                    </div><!-- end col -->
                 </div><!-- end row -->
 
 
@@ -2652,6 +2543,19 @@
 
 <!-- App js -->
 <script src="assets/js/app.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script>
+    $('.payment-entity').on('click', function() {
+        // Set active class
+        $('.payment-selection .payment-entity').removeClass('selected');
+        $(this).addClass('selected');
+
+        // Show correct info
+        $('.provider-section').addClass('hide');
+        $('.' + $(this).data('payment')).removeClass('hide');
+    });
+</script>
 </body>
 
 </html>
