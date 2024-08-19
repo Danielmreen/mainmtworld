@@ -12,6 +12,10 @@ To run the website:
 
 FIRST STEP BEFORE CAN RUN FILE ( SKIP IF ALREADY INSTALL):
 
-1.INSTALL NODE.JS
+1.INSTALL NODE.js
+
+
 2. INSTALL YARN
-3. INSTALL GULP   :    npm install -g gulp
+
+   
+3.. INSTALL GULP   :    npm install -g gulp
