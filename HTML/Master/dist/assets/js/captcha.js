@@ -1,0 +1,1 @@
+var captcha=sliderCaptcha({id:"captcha",loadingText:"Loading...",failedText:"Try again",barText:"Slide right to fill",repeatIcon:"fa fa-redo",onSuccess:function(){setTimeout(function(){captcha.reset()},1e3)},setSrc:function(){}});

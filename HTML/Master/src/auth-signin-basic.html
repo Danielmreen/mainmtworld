@@ -9,6 +9,7 @@
     <link href="assets/css/slidercaptcha.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/5.7.2/css/all.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -79,19 +80,21 @@
                                             <button class="btn btn-success w-100" type="submit">Sign In</button>
                                         </div>
                                         <!--captcha-->
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-6.5 mb-12">
-                                                <div class="slidercaptcha card">
-                                                    <div class="card-header">
-                                                        <span>Please complete security verification!</span>
-                                                    </div>
-                                                    <div class="card-body">
-                                                        <div id="captcha"></div></div>
 
+                                            <div class="row justify-content-center">
+                                                <div class="col-md-10 mb-5">
+                                                    <div class="slidercaptcha card">
+                                                        <div class="card-header">
+                                                            <span>Please complete security verification!</span>
+                                                        </div>
+                                                        <div class="card-body">
+                                                            <div id="captcha"></div></div>
+                                                    </div>
                                                 </div>
+
                                             </div>
 
-                                        </div>
+                                </div>
 
                                     </form>
                                 </div>
@@ -137,8 +140,8 @@
     <!-- password-addon init -->
     <script src="assets/js/pages/password-addon.init.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
-    <script src="assets/jquery-easing/jquery.easing.min.js"></script>
     <script src="assets/js/ruang-admin.min.js"></script>
     <script src="assets/js/longbow.slidercaptcha.js"></script>
     <script src="assets/js/captcha.js"></script>
