@@ -367,42 +367,40 @@
 
                         </li> <!-- end Dashboard Menu -->
                         <!--Start other menu-->
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                                 <i class="ri-wallet-line"></i> <span>Main Balance</span>
                             </a>
 
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                <i class="ri-exchange-box-line"></i> <span>Transaction</span>
+                        -->
+                        <li class="nav-item" >
+                            <a class="nav-link" href="transaction.html" >
+                                 <span class="ri-exchange-box-line">&nbsp;&nbsp; Transactions</span>
                             </a>
 
                         </li>
+                        <!--<i class="ri-exchange-box-line"></i>-->
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                                <i class="ri-team-line"></i> <span>Hierarchy</span>
+                            <a class="nav-link" href="hierarchy.html">
+                                 <span class="ri-team-line">&nbsp;&nbsp; Hierarchy</span>
                             </a>
-
+                        </li>
+                        <!--<i class="ri-team-line"></i>-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="pamm.html">
+                                <span class="ri-global-line">&nbsp;&nbsp; PAMM</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link menu-link" href="#sidebartrade" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebartrade">
-                                <i class="ri-global-line"></i> <span>Trading Room (PAMM/COPY)</span>
+                            <a class="nav-link" href="copytrade.html">
+                                <span class="ri-global-line">&nbsp;&nbsp; Copy</span>
                             </a>
-
-                            <div class="collapse menu-dropdown" id="sidebartrade">
-                                <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="pamm-trade.html" class="nav-link" data-key="t-main-tpamm">PAMM </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="copy-trade.html" class="nav-link" data-key="t-tcopy">COPY</a>
-                                    </li>
-                                </ul>
-                            </div>
-
                         </li>
+
+
+
+
 
 
 
@@ -416,92 +414,12 @@
                             </a>
                             <div class="collapse menu-dropdown" id="sidebarApps">
                                 <ul class="nav nav-sm flex-column">
-                                    <li class="nav-item">
-                                        <a href="#sidebarCalendar" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCalendar" data-key="t-calender">
-                                            Calendar
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarCalendar">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="apps-calendar.html" class="nav-link" data-key="t-main-calender"> Main Calender </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-calendar-month-grid.html" class="nav-link" data-key="t-month-grid"> Month Grid </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
+
                                     <li class="nav-item">
                                         <a href="apps-chat.html" class="nav-link" data-key="t-chat"> Chat </a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarEmail" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEmail" data-key="t-email">
-                                            Email
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarEmail">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="apps-mailbox.html" class="nav-link" data-key="t-mailbox"> Mailbox </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#sidebaremailTemplates" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebaremailTemplates" data-key="t-email-templates">
-                                                        Email Templates
-                                                    </a>
-                                                    <div class="collapse menu-dropdown" id="sidebaremailTemplates">
-                                                        <ul class="nav nav-sm flex-column">
-                                                            <li class="nav-item">
-                                                                <a href="apps-email-basic.html" class="nav-link" data-key="t-basic-action"> Basic Action </a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a href="apps-email-ecommerce.html" class="nav-link" data-key="t-ecommerce-action"> Ecommerce Action </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="#sidebarEcommerce" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarEcommerce" data-key="t-ecommerce">
-                                            Ecommerce
-                                        </a>
-                                        <div class="collapse menu-dropdown" id="sidebarEcommerce">
-                                            <ul class="nav nav-sm flex-column">
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-products.html" class="nav-link" data-key="t-products"> Products </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-product-details.html" class="nav-link" data-key="t-product-Details"> Product Details </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-add-product.html" class="nav-link" data-key="t-create-product"> Create Product </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-orders.html" class="nav-link" data-key="t-orders">
-                                                        Orders </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-order-details.html" class="nav-link" data-key="t-order-details"> Order Details </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-customers.html" class="nav-link" data-key="t-customers"> Customers </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-cart.html" class="nav-link" data-key="t-shopping-cart"> Shopping Cart </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-checkout.html" class="nav-link" data-key="t-checkout"> Checkout </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-sellers.html" class="nav-link" data-key="t-sellers">
-                                                        Sellers </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="apps-ecommerce-seller-details.html" class="nav-link" data-key="t-sellers-details"> Seller Details </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </li>
+
+
                                     <li class="nav-item">
                                         <a href="#sidebarProjects" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProjects" data-key="t-projects">
                                             Projects
@@ -1443,12 +1361,7 @@
                                     <div class="modal-body p-0">
                                         <div class="step-arrow-nav">
                                             <ul class="nav nav-pills nav-justified custom-nav" role="tablist">
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link p-3 active" id="pills-bill-info-tab" data-bs-toggle="pill" data-bs-target="#pills-bill-info" type="button" role="tab" aria-controls="pills-bill-info" aria-selected="true">Personal Info</button>
-                                                </li>
-                                                <li class="nav-item" role="presentation">
-                                                    <button class="nav-link p-3" id="pills-bill-address-tab" data-bs-toggle="pill" data-bs-target="#pills-bill-address" type="button" role="tab" aria-controls="pills-bill-address" aria-selected="false">Bank Details</button>
-                                                </li>
+
                                                 <li class="nav-item" role="presentation">
                                                     <button class="nav-link p-3" id="pills-payment-tab" data-bs-toggle="pill" data-bs-target="#pills-payment" type="button" role="tab" aria-controls="pills-payment" aria-selected="false">Document Verification</button>
                                                 </li>
@@ -1461,105 +1374,9 @@
                                     <!--end modal-body-->
                                     <div class="modal-body">
                                         <div class="tab-content">
-                                            <div class="tab-pane fade show active" id="pills-bill-info" role="tabpanel" aria-labelledby="pills-bill-info-tab">
-                                                <div class="row g-3">
-                                                    <div class="col-lg-6">
-                                                        <div>
-                                                            <label for="firstName" class="form-label">First Name</label>
-                                                            <input type="text" class="form-control" id="firstName" placeholder="Enter your firstname">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-6">
-                                                        <div>
-                                                            <label for="lastName" class="form-label">Last Name</label>
-                                                            <input type="text" class="form-control" id="lastName" placeholder="Enter your lastname">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-6">
-                                                        <div>
-                                                            <label for="phoneNumber" class="form-label">Phone</label>
-                                                            <input type="text" class="form-control" id="phoneNumber" placeholder="Enter your phone number">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-6">
-                                                        <div>
-                                                            <label for="dateofBirth" class="form-label">Date of Birth</label>
-                                                            <input type="text" class="form-control" id="dateofBirth" data-provider="flatpickr" placeholder="Enter your date of birth">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-4">
-                                                        <div>
-                                                            <label for="emailID" class="form-label">Email ID</label>
-                                                            <input type="email" class="form-control" id="emailID" placeholder="Enter your email">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-4">
-                                                        <div>
-                                                            <label for="password" class="form-label">Password</label>
-                                                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-4">
-                                                        <div>
-                                                            <label for="confirmPassword" class="form-label">Confirm Password</label>
-                                                            <input type="password" class="form-control" id="confirmPassword" placeholder="Enter your confirm password">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-6">
-                                                        <div>
-                                                            <label for="vatNo" class="form-label">VAT/TIN No.</label>
-                                                            <input type="text" class="form-control" id="vatNo" placeholder="Enter your VAT/TIN no">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-6">
-                                                        <div>
-                                                            <label for="serviceTax" class="form-label">Service Tax No.</label>
-                                                            <input type="text" class="form-control" id="serviceTax" placeholder="Enter your service tax no">
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-12">
-                                                        <div>
-                                                            <label for="country-select" class="form-label">Country</label>
-                                                            <select class="form-control" data-choices name="country-select" id="country-select">
-                                                                <option value="">Select country</option>
-                                                                <option value="Argentina">Argentina</option>
-                                                                <option value="Belgium">Belgium</option>
-                                                                <option value="Brazil">Brazil</option>
-                                                                <option value="Colombia">Colombia</option>
-                                                                <option value="Denmark">Denmark</option>
-                                                                <option value="France">France</option>
-                                                                <option value="Germany">Germany</option>
-                                                                <option value="Mexico">Mexico</option>
-                                                                <option value="Russia">Russia</option>
-                                                                <option value="Spain">Spain</option>
-                                                                <option value="Syria">Syria</option>
-                                                                <option value="United Kingdom">United Kingdom</option>
-                                                                <option value="United States of America">United States of America</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                    <div class="col-lg-12">
-                                                        <div class="d-flex align-items-start gap-3 mt-3">
-                                                            <button type="button" class="btn btn-primary btn-label right ms-auto nexttab" data-nexttab="pills-bill-address-tab"><i class="ri-arrow-right-line label-icon align-middle fs-16 ms-2"></i> Next Step</button>
-                                                        </div>
-                                                    </div>
-                                                    <!--end col-->
-                                                </div>
-                                                <!--end row-->
-                                            </div>
-                                            <!-- end tab pane -->
 
-                                            <div class="tab-pane fade" id="pills-bill-address" role="tabpanel" aria-labelledby="pills-bill-address-tab">
+
+                                            <div class="tab-pane fade " id="pills-bill-address" role="tabpanel" aria-labelledby="pills-bill-address-tab">
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="mb-3">
@@ -1607,17 +1424,17 @@
                                             </div>
                                             <!-- end tab pane -->
 
-                                            <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                                            <div class="tab-pane fade show active" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
                                                 <h5 class="mb-3">Choose Document Type</h5>
 
                                                 <div class="d-flex gap-2">
                                                     <div>
-                                                        <input type="radio" class="btn-check" id="passport" checked name="choose-document">
-                                                        <label class="btn btn-outline-info" for="passport">Passport</label>
+                                                        <input type="radio" class="btn-check" id="ic" checked name="choose-document">
+                                                        <label class="btn btn-outline-info" for="ic">IC</label>
                                                     </div>
                                                     <div>
-                                                        <input type="radio" class="btn-check" id="aadhar-card" name="choose-document">
-                                                        <label class="btn btn-outline-info" for="aadhar-card">Aadhar Card</label>
+                                                        <input type="radio" class="btn-check" id="passport" name="choose-document">
+                                                        <label class="btn btn-outline-info" for="passport">Passport</label>
                                                     </div>
                                                     <div>
                                                         <input type="radio" class="btn-check" id="pan-card" name="choose-document">

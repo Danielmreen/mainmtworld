@@ -1,0 +1,317 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Copytrade"})
+
+    @@include("partials/head-css.html")
+
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/menu.html")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    @@include("partials/page-title.html", {"pagetitle": "Copytrade", "title": "Join Copytrade"})
+
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-animate">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-muted mb-3">Main Balance</h6>
+                                            <h2 class="mb-0">$<span class="counter-value" data-target="243"></span><small class="text-muted fs-13">.10k</small></h2>
+                                        </div>
+                                        <div class="flex-shrink-0 avatar-sm">
+                                            <div class="avatar-title bg-danger-subtle text-danger fs-22 rounded">
+                                                <i class="ri-shopping-bag-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-->
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-animate">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-muted mb-3">Total PAMM</h6>
+                                            <h2 class="mb-0">$<span class="counter-value" data-target="658"></span><small class="text-muted fs-13">.00k</small></h2>
+                                        </div>
+                                        <div class="flex-shrink-0 avatar-sm">
+                                            <div class="avatar-title bg-info-subtle text-info fs-22 rounded">
+                                                <i class="ri-funds-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-->
+                        <div class="col-xl-3 col-sm-6">
+                            <div class="card card-animate">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="flex-grow-1">
+                                            <h6 class="text-muted mb-3">Total Copytrade</h6>
+                                            <h2 class="mb-0">$<span class="counter-value" data-target="104"></span><small class="text-muted fs-13">.85k</small></h2>
+                                        </div>
+                                        <div class="flex-shrink-0 avatar-sm">
+                                            <div class="avatar-title bg-warning-subtle text-warning fs-22 rounded">
+                                                <i class="ri-arrow-left-down-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end card-->
+                        </div>
+                        <!--end col-->
+
+                    </div>
+                    <!--end row-->
+
+                    <div class="row">
+                        <div class="col-xxl-9">
+                            <div class="card card-height-100">
+                                <div class="card-header border-0 align-items-center d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Market Graph</h4>
+
+                                </div><!-- end card header -->
+                                <div class="card-body p-0">
+                                    <div class="bg-light-subtle border-top-dashed border border-start-0 border-end-0 border-bottom-dashed py-3 px-4">
+                                        <div class="row align-items-center">
+                                            <div class="col-6">
+                                                <div class="d-flex flex-wrap gap-4 align-items-center">
+                                                    <div>
+                                                        <h3 class="fs-19">$46,959.<small class="fs-14 text-muted">00</small></h3>
+                                                        <p class="text-muted text-uppercase fw-medium mb-0">Bitcoin (BTC) <small class="badge bg-success-subtle text-success"><i class="ri-arrow-right-up-line align-bottom"></i> 2.15%</small></p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-6">
+                                                <div class="d-flex">
+                                                    <div class="d-flex justify-content-end text-end flex-wrap gap-4 ms-auto">
+                                                        <div class="pe-3">
+                                                            <h6 class="mb-2 text-muted">High</h6>
+                                                            <h5 class="text-success mb-0">$28,722.76</h5>
+                                                        </div>
+                                                        <div class="pe-3">
+                                                            <h6 class="mb-2 text-muted">Low</h6>
+                                                            <h5 class="text-danger mb-0">$68,789.63</h5>
+                                                        </div>
+                                                        <div>
+                                                            <h6 class="mb-2 text-muted">Market Volume</h6>
+                                                            <h5 class="text-danger mb-0">$888,411,910</h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                    </div>
+                                </div><!-- end cardbody -->
+                                <div class="card-body p-0 pb-3">
+                                    <div id="Market_chart" data-colors='["--vz-success", "--vz-danger"]' class="apex-charts" dir="ltr"></div>
+                                </div><!-- end cardbody -->
+                            </div><!-- end card -->
+                        </div>
+                        <!--end col-->
+                        <div class="col-xxl-3">
+                            <div class="card card-height-100">
+                                <div class="card-header align-items-center border-0 d-flex">
+                                    <h4 class="card-title mb-0 flex-grow-1">Copytrade</h4>
+                                    <ul class="nav nav-tabs-custom rounded card-header-tabs nav-justified border-bottom-0 mx-n3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#cryptoBuy" role="tab">
+                                                JOIN
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#cryptoSell" role="tab">
+                                                END
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="tab-content text-muted">
+                                        <div class="tab-pane active" id="cryptoBuy" role="tabpanel">
+                                            <div class="p-3 bg-warning-subtle">
+                                                <div class="float-end ms-2">
+                                                    <h6 class="text-warning mb-0">USD Balance : <span class="text-body">$12,426.07</span></h6>
+                                                </div>
+                                                <h6 class="mb-0 text-danger">Copytrade</h6>
+                                            </div>
+                                            <div class="p-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label>Currency :</label>
+                                                            <select class="form-select">
+                                                                <option>USDT</option>
+                                                                <option>Touch 'N Go</option>
+                                                                <option>MTW Wallet</option>
+                                                            </select>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label>Payment Method :</label>
+                                                            <select class="form-select">
+                                                                <option>Wallet Address</option>
+                                                                <option>Other Address</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                                <div>
+                                                    <div class="input-group mb-3">
+                                                        <label class="input-group-text">Amount</label>
+                                                        <input type="text" class="form-control" placeholder="0">
+                                                    </div>
+
+
+
+                                                    <div class="input-group mb-0">
+                                                        <label class="input-group-text">Total</label>
+                                                        <input type="text" class="form-control" placeholder="2700.16">
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3 pt-2">
+
+
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <p class="fs-13 mb-0">This transaction will be activated after 7 days through cooling period MTWORLD system</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <h6 class="mb-0"></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3 pt-2">
+                                                    <button type="button" class="btn btn-primary w-100">JOIN</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end tab-pane-->
+                                        <div class="tab-pane " id="cryptoSell" role="tabpanel">
+                                            <div class="p-3 bg-warning-subtle">
+                                                <div class="float-end ms-2">
+                                                    <h6 class="text-warning mb-0">USD Balance : <span class="text-body">$12,426.07</span></h6>
+                                                </div>
+                                                <h6 class="mb-0 text-danger">Copytrade</h6>
+                                            </div>
+                                            <div class="p-3">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label>Currency :</label>
+                                                            <select class="form-select">
+                                                                <option>USDT</option>
+                                                                <option>Touch 'N Go</option>
+                                                                <option>MTW Wallet</option>
+                                                            </select>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                    <div class="col-6">
+                                                        <div class="mb-3">
+                                                            <label>Payment Method :</label>
+                                                            <select class="form-select">
+                                                                <option>Wallet Address</option>
+                                                                <option>Other Address</option>
+
+                                                            </select>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                                <div>
+                                                    <div class="input-group mb-3">
+                                                        <label class="input-group-text">Amount</label>
+                                                        <input type="text" class="form-control" placeholder="0">
+                                                    </div>
+
+
+
+                                                    <div class="input-group mb-0">
+                                                        <label class="input-group-text">Total</label>
+                                                        <input type="text" class="form-control" placeholder="2700.16">
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3 pt-2">
+
+
+                                                    <div class="d-flex">
+                                                        <div class="flex-grow-1">
+                                                            <p class="fs-13 mb-0">Your balance will be received to your wallet after 7 days through cooling period MTWORLD system</p>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <h6 class="mb-0"></h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-3 pt-2">
+                                                    <button type="button" class="btn btn-danger w-100">END</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--end tab-pane-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            @@include("partials/footer.html")
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    @@include("partials/customizer.html")
+
+    @@include("partials/vendor-scripts.html")
+
+    <!-- list.js min js -->
+    <script src="assets/libs/list.js/list.min.js"></script>
+    <script src="assets/libs/list.pagination.js/list.pagination.min.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!--crypto-buy-sell init-->
+    <script src="assets/js/pages/crypto-buy-sell.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
