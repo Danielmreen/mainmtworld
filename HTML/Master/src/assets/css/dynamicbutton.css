@@ -1,0 +1,5 @@
+
+    /* Hide all buttons initially */
+.dynamicbutton {
+    display: none;
+}
