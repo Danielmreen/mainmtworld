@@ -1,0 +1,277 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Network"})
+
+    @@include("partials/head-css.html")
+
+    <link href="assets/css/treeview.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        @@include("partials/menu.html")
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    @@include("partials/page-title.html", {"pagetitle": "Dashboards", "title": "Network"})
+
+
+
+<!--
+                                <div class="col-xl-4">
+                                    <div class="card card-animate">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar-sm flex-shrink-0">
+                                                    <span class="avatar-title bg-warning-subtle text-warning rounded-2 fs-2">
+                                                        <i data-feather="award" class="text-warning"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="flex-grow-1 ms-3">
+                                                    <p class="text-uppercase fw-medium text-muted mb-3">New Leads</p>
+                                                    <div class="d-flex align-items-center mb-3">
+                                                        <h4 class="fs-4 flex-grow-1 mb-0"><span class="counter-value" data-target="7522">0</span></h4>
+                                                        <span class="badge bg-success-subtle text-success fs-12"><i class="ri-arrow-up-s-line fs-13 align-middle me-1"></i>3.58 %</span>
+                                                    </div>
+                                                    <p class="text-muted mb-0">Leads this month</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+-->
+
+                            </div><!-- end row -->
+
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="card">
+                                        <div class="card-header border-0 align-items-center d-flex">
+                                            <h4 class="card-title mb-0 flex-grow-1">Network hierarchy</h4>
+
+                                        </div><!-- end card header -->
+
+                                        <div class="card-header p-0 border-0 bg-light-subtle">
+                                            <div class="row g-0 text-center">
+
+
+                                                <!--end col-->
+                                            </div>
+                                        </div><!-- end card header -->
+                                        <div class="card-body p-0 pb-2">
+                                            <div class="" >
+
+                                                <div class="treeview js-treeview">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="treeview__level" data-level="A">
+                                                                <span class="level-title">Level A</span>
+                                                                <div class="treeview__level-btns">
+                                                                    <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                    <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                    <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                    <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                </div>
+                                                            </div>
+                                                            <ul>
+
+                                                                <li>
+                                                                    <div class="treeview__level" data-level="B">
+                                                                        <span class="level-title">Level A</span>
+                                                                        <div class="treeview__level-btns">
+                                                                            <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                            <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                            <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                            <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <ul>
+
+                                                                        <li>
+                                                                            <div class="treeview__level" data-level="C">
+                                                                                <span class="level-title">Level A</span>
+                                                                                <div class="treeview__level-btns">
+                                                                                    <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                                    <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                                    <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                                    <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <ul>
+
+                                                                                <li>
+                                                                                    <div class="treeview__level" data-level="D">
+                                                                                        <span class="level-title">Level A</span>
+                                                                                        <div class="treeview__level-btns">
+                                                                                            <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                                            <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                                            <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                                            <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <ul>
+                                                                                    </ul>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <div class="treeview__level" data-level="C">
+                                                                                <span class="level-title">Level A</span>
+                                                                                <div class="treeview__level-btns">
+                                                                                    <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                                    <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                                    <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                                    <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <ul>
+                                                                            </ul>
+                                                                        </li>
+
+                                                                        <li>
+                                                                            <div class="treeview__level" data-level="C">
+                                                                                <span class="level-title">Level A</span>
+                                                                                <div class="treeview__level-btns">
+                                                                                    <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                                    <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                                    <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                                    <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <ul>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+
+                                                                <li>
+                                                                    <div class="treeview__level" data-level="B">
+                                                                        <span class="level-title">Level A</span>
+                                                                        <div class="treeview__level-btns">
+                                                                            <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                                            <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                                            <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                                            <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <ul>
+                                                                    </ul>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <template id="levelMarkup">
+                                                <li>
+                                                    <div class="treeview__level" data-level="A">
+                                                        <span class="level-title">Level A</span>
+                                                        <div class="treeview__level-btns">
+                                                            <div class="btn btn-default btn-sm level-add"><span class="fa fa-plus"></span></div>
+                                                            <div class="btn btn-default btn-sm level-remove"><span class="fa fa-trash text-danger"></span></div>
+                                                            <div class="btn btn-default btn-sm level-same"><span>Add Same Level</span></div>
+                                                            <div class="btn btn-default btn-sm level-sub"><span>Add Sub Level</span></div>
+                                                        </div>
+                                                    </div>
+                                                    <ul>
+                                                    </ul>
+                                                </li>
+                                            </template>
+
+
+
+
+
+                                            </div>
+                                        </div><!-- end card body -->
+                                    </div><!-- end card -->
+                                </div><!-- end col -->
+                            </div><!-- end row -->
+                        </div><!-- end col -->
+
+
+                    </div><!-- end row -->
+
+
+
+                    <div class="row">
+                        <!--
+                        <div class="col-xxl-4">
+                            <div class="card card-height-100">
+
+
+
+                            </div>
+                        </div>
+                           -->
+                        <div class="col-xxl-4 col-lg-6">
+                            <div class="card card-height-100">
+
+
+
+                            </div><!-- end card -->
+                        </div><!-- end col -->
+
+                        <div class="col-xxl-4 col-lg-6">
+                            <div class="card card-height-100">
+                                <div class="card-header align-items-center d-flex">
+
+
+                                </div><!-- end card header -->
+
+                                <div class="card-body">
+
+                                </div><!-- end cardbody -->
+                            </div><!-- end card -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            @@include("partials/footer.html")
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    @@include("partials/customizer.html")
+
+    @@include("partials/vendor-scripts.html")
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- projects js -->
+    <script src="assets/js/pages/dashboard-projects.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+    <script src="assets/jquery/jquery.js"></script>
+
+
+    <script src="assets/js/treeview.js"></script>
+</body>
+
+</html>

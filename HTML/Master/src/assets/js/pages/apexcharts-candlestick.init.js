@@ -300,7 +300,7 @@ if (chartCandlestickBasicColors) {
             }
         },
         title: {
-            text: 'CandleStick Chart',
+            text: '',
             align: 'left',
             style: {
                 fontWeight: 500,
@@ -310,6 +310,7 @@ if (chartCandlestickBasicColors) {
             type: 'datetime'
         },
         yaxis: {
+            type: 'dollar',
             tooltip: {
                 enabled: true
             }
