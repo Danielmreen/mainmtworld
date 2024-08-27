@@ -4,7 +4,7 @@
 }
 .treeview .btn-default:hover {
     background-color: #f7faea;
-    color: #bada55;
+    color:  #405189;
 }
 .treeview ul {
     list-style: none;
@@ -49,8 +49,8 @@
     height: 60px;
     width: 60px;
     top: -9.5px;
-    background-color: #54a6d9;
-    border: 7.5px solid #d5e9f6;
+    background-color: #405189;
+    /*border: 7.5px solid #d5e9f6;*/
     /*font-size: 22px;*/
 }
 .treeview > ul > li > ul {
@@ -78,7 +78,7 @@
     width: 55px;
     border-radius: 50%;
     border: 7.5px solid #eef6d5;
-    background-color: #bada55;
+    background-color:  #405189;
     color: #fff;
     /*font-size: 20px; */
 }
